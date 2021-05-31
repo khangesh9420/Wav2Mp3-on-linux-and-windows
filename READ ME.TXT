@@ -1,0 +1,37 @@
+//READ me//
+
+"for dynamically run file install mp3lame library on linux and Windows"
+
+I have completed the task as per the requirements where it will work on both Windows and Linux.
+It will run Only POSIX Function.
+
+On Linux......
+
+In here on LINUX I compiled program  statically and dynamically where if 
+in "makfile" 
+ "STATIC_LIB =1" // create static file i.e All_wave_static_linux
+ "STATIC_LIB = 0"// create dynamic file i.e All_wave_dynamic_linux
+
+step 1 :- make the file using "make" command
+          'make'
+
+step 2 :-  Run the program using following commands
+          ./exe/All_wave_static_linux audio // for static file
+          ./exe/All_wave_dynamic_linux audio // for dynamic
+...................................................................................................................
+
+on Windows........Cygwin(32 bit)(library is to add gcc-core, g++, make,from (DEVEL) Package)
+
+
+In here on Windows I compiled program  statically and dynamically where if 
+in "makfile" 
+ "STATIC_LIB =1" // create static file i.e All_wave_static_win.exe
+ "STATIC_LIB = 0"// create dynamic file i.e All_wave_dynamic_win.exe
+
+step 1 :- make the file using "make" command
+          'make'
+
+step 2 :- Run the program using following commands
+         ./exe/All_wave_dynamic_win.exe audio // dynamic file on windows
+         ./exe/All_wave_static_win.exe audio  //static file on windows
+  
